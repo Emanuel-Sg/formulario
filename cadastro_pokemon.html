@@ -7,8 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
 </head>
+<style>
+    body {
+        background-image: url('imagem/pokedex.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center top;
+    }
+</style>
 
-<body>
+<body border: solid>
     <section id="informacoes-pessoais-secao">
 
         <header>
@@ -16,36 +24,26 @@
         </header>
 
         <div class="input-group">
+            <label id="rotulo-nome" for="campo-nome">Nome: </label>
+            <input id="campo-nome" name="nome" type="text">
             <label id="rotulo-numero" for="campo-idade">Número do Pokemon: </label>
             <input id="campo-numero" name="numero" type="number" min="0" max="898">
         </div>
 
         <div class="input-group">
-            <label id="rotulo-nome" for="campo-nome">Nome: </label>
-            <input id="campo-nome" name="nome" type="text">
-        </div>
-
-        <div class="input-group">
             <label id="rotulo-tipo" for="campo-tipo">Tipo: </label>
             <input id="campo-tipo" name="tipo" type="text">
-        </div>
 
-        <div class="input-group">
             <label id="rotulo-total" for="campo-total">Total: </label>
             <input id="campo-total" name="total" type="text">
         </div>
-
         <div class="input-group">
             <label id="rotulo-hp" for="campo-idade">HP: </label>
             <input id="campo-hp" name="hp" type="number" min="0" max="255">
-        </div>
 
-        <div class="input-group">
             <label id="rotulo-ataque" for="campo-idade">Ataque Base: </label>
             <input id="campo-ataque" name="ataque" type="number">
-        </div>
 
-        <div class="input-group">
             <label id="rotulo-defesa" for="campo-idade">Defesa: </label>
             <input id="campo-defesa" name="defesa" type="number">
         </div>
@@ -53,43 +51,34 @@
         <div class="input-group">
             <label id="rotulo-ataqueSp" for="campo-idade">Ataque Especial: </label>
             <input id="campo-ataqueSp" name="ataqueSp" type="number">
-        </div>
 
-        <div class="input-group">
             <label id="rotulo-defesa_especial" for="campo-idade">Defesa Especial: </label>
             <input id="campo-defesa_especial" name="defesa_especial" type="number">
-        </div>
 
-        <div class="input-group">
             <label id="rotulo-velocidade" for="campo-idade">Velocidade: </label>
             <input id="campo-velocidade" name="velocidade" type="number">
         </div>
 
         <div class="input-group">
             <label id="rotulo-geracao" for="campo-idade">Geracao: </label> <br>
-            <input name="geracao" type="radio" value="1">1<br>
-            <input name="geracao" type="radio" value="2">2<br>
-            <input name="geracao" type="radio" value="3">3<br>
-            <input name="geracao" type="radio" value="4">4<br>
-            <input name="geracao" type="radio" value="5">5<br>
-            <input name="geracao" type="radio" value="6">6<br>
-            <input name="geracao" type="radio" value="7">7<br>
+            <input name="geracao" type="radio" value="1">1
+            <input name="geracao" type="radio" value="2">2
+            <input name="geracao" type="radio" value="3">3
+            <input name="geracao" type="radio" value="4">4
+            <input name="geracao" type="radio" value="5">5
+            <input name="geracao" type="radio" value="6">6
+            <input name="geracao" type="radio" value="7">7
         </div>
 
         <div class="input-group">
             <label id="rotulo-lendario" for="campo-idade">Lendario: </label><br>
-            <input name="lendario" type="radio" value="sim">Sim<br>
-            <input name="lendario" type="radio" value="nao">Não<br>
-
+            <input name="lendario" type="radio" value="sim">Sim
+            <input name="lendario" type="radio" value="nao">Não
         </div>
-
         <div class="input-group">
             <label id="rotulo-cor" for="campo-idade">Cor: </label>
             <input id="campo-cor" name="cor" type="text">
-        </div>
 
-
-        <div class="input-group">
             <label id="rotulo-altura_m" for="campo-idade">Altura: </label>
             <input id="campo-altura_m" name="altura_m" type="number">
         </div>
@@ -98,10 +87,7 @@
         <div class="input-group">
             <label id="rotulo-peso_kg" for="campo-idade">Peso: </label>
             <input id="campo-peso_kg" name="peso_kg" type="number">
-        </div>
 
-
-        <div class="input-group">
             <label id="rotulo-taxa_captura" for="campo-idade">taxa_captura: </label>
             <input id="campo-taxa_captura" name="taxa_captura" type="number" min="0" max="255">
         </div>
